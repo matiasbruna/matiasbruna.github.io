@@ -4,51 +4,27 @@
 }
 
 body{
-    padding: 0;
-    margin: 0;
-    display: grid;
-    height: 100vh;
-    max-height: 100%;
-    grid-template-rows: 25% auto 20%;
-    grid-template-columns: auto auto auto;
     background-color: rgb(255, 255, 255);
-    justify-items: stretch;
-    align-items: stretch;
+  
 }
 
-.grid-layout{
-    padding: 1px;
-    margin: 1px;
+
+.contenedor-grid{
     display: grid;
     grid-template-columns: auto auto auto;
-    background-color: rgb(255, 255, 255);
-    justify-items: stretch;
-    align-items: center;
-
 }
 
 
 .head{
-    grid-column: 1/4;
+
     background: linear-gradient(to bottom, #13222c, #57626d);
     text-align: center;
     padding: 0.5rem;
 
 }
 
-.cont{
- 
-
-    border-radius: 5px;
-    width: 10rem;
-    height: 25rem;
-    margin-top: 1rem;
-    margin: 8rem;
-    
-}
 
 .footer{
-    grid-column: 1/4;
     background-color: rgb(66, 128, 128);
     border: 1px solid black;
     color: antiquewhite;
