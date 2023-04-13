@@ -96,7 +96,7 @@ function cargarNombresColumnas() {
   let celdaAcciones = fila.insertCell();
   celdaId.textContent = "Id";
   celdaNombre.textContent = "Nombre";
-  celdaDescripcion.textContent = "descripcion";
+  celdaDescripcion.textContent = "Descripcion";
   celdaEstado.textContent = "Estado";
   celdaAcciones.textContent = "Acciones";
 }
