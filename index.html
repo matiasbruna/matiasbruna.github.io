@@ -2,80 +2,66 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/main.css">
-  <title>Marketplace UTN San Francisco</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
-  <div class="head">
-
-    <h1>Marketplace Utn San Francisco</h1>
-
-    <div class="contenedor-buscador">
-      <input type="text" placeholder="Buscar productos">
-    </div>
-
-  </div>
-  <div class="contenedor-grid">
-
-
-    <div class="producto">
-      <h2>Producto 1</h2>
-      <img src="img/note1.jpg" alt="">
-      <hr>
-      <h4>Precio: 200.000$</h4>
-      <hr>
-      <P>Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Sed, aut ipsa consequatur, quia omnis explicabo neque
-        dolorum ducimus officia reprehenderit libero </P>
-      <a href="producto.html">Comprar</a>
+    <div class="container">
+        <h1>Lista de Tareas</h1>
     </div>
 
 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <table class="table table-dark" id="tablaTareas">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nombre</th>
+                            <th>Descripcion</th>
+                            <th>Estado</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
 
-    <div class="producto">
-      <h2>Producto 2</h2>
-      <img src="img/note2.png" alt="">
-      <hr>
-      <h4>Precio: 200.000$</h4>
-      <hr>
-      <P>Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Sed, aut ipsa consequatur, quia omnis explicabo neque
-        dolorum ducimus officia reprehenderit libero </P>
-      <a href="producto.html">Comprar</a>
+                    </tbody>
+
+                </table>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Ingresar Tareas Nuevas </h5>
+
+                        <form>
+                            <div class="form-group">
+                                <label for="nombre-tarea">Nombre de la tarea:</label>
+                                <input type="text" class="form-control" id="txtNombre"
+                                    placeholder="Ingresa Nombre de Tarea">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtArea">Descripcion:</label>
+                                <textarea class="form-control" id="txtArea" rows="3"
+                                    placeholder="Descripcion"></textarea>
+                            </div>
+                            <button type="submit" id="btnAgregar" class="btn btn-primary mt-3">Agregar</button>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
 
-    <div class="producto">
-      <h2>Producto 3</h2>
-      <img src="img/note3.jpg" alt="">
-      <hr>
-      <h4>Precio: 200.000$</h4>
-      <hr>
-      <P>Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Sed, aut ipsa consequatur, quia omnis explicabo neque
-        dolorum ducimus officia reprehenderit libero </P>
-      <a href="producto.html">Comprar</a>
-    </div>
-
-  </div>
-
-  <div class="footer">
-    <h3>Contacto</h3>
-    <div class="contenedor-footer">
-      <p class="footer-text"> 1234 Calle Falsa, Springfield</p>
-      <p class="footer-text"> (123) 456-7890</p>
-      <p class="footer-text"> info@tusitio.com</p>
-      <p class="footer-text">&copy; 2023 Tu Sitio. Todos los derechos reservados.</p>
-
-    </div>
-
-  </div>
-
-
-
+    <script src="./src/script.js"></script>
 </body>
 
 </html>
